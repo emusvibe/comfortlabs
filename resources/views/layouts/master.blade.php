@@ -49,7 +49,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="{{asset("/img/comfortlabs-logo.jpg")}}" alt="ComfortLabs Logo" class="brand-image img-circle elevation-3"
-         style="width:50px;height:100px;">
+         style="width:60px;height:80px;">
       <span class="brand-text font-weight-light">ComfortLabs</span>
     </a>
 
@@ -57,7 +57,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
+        <div class="image"> 
           <img src="{{asset("/img/user.png")}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
@@ -153,6 +153,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="content">
       <div class="container-fluid">
           <router-view></router-view>
+          <vue-progress-bar></vue-progress-bar>
         
       </div><!-- /.container-fluid -->
     </div>  
