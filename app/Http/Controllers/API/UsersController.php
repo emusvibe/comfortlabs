@@ -61,7 +61,7 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+        //retrieve all users
         $user = User::findOrFail($id);
         
         $this->validate($request, [
@@ -69,7 +69,7 @@ class UsersController extends Controller
             'email' => 'unique:users,email,'.$user->id,
             'password' => 'sometimes|min:6'            
         ]);
-      
+        
         $user->update($request->all());
         return ['User Updating'];
     }
